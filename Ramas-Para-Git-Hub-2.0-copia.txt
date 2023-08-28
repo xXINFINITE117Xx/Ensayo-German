@@ -1,0 +1,67 @@
+COMANDOS BÁSICOS PARA CREAR RAMAS EN GIT
+Y desde una consola o terminal tendremos a nuestra disposición varios comandos para trabajar con ramas:
+
+
+1-El comando git branch permite ver las ramas creadas
+git branch
+
+
+2-Para crear una rama añadiremos al comando git branch el nombre de la rama
+
+
+git branch nombre-de-la-rama
+3-Para comprobar las ramas que tenemos creadas, podemos utilizar el siguiente comando:
+
+
+git branch --list
+4-Para eliminar una rama:
+
+
+git branch -d nombre-de-la-rama
+5-Para cambiar de rama:
+
+
+git checkout nombre-de-la-rama
+6-Atajo para crear y cambiar de rama:
+
+
+git checkout -b nombre-de-tu-rama
+6-Subir una rama al repositorio remoto de Github (o otro):
+
+git push -u origin nombre-de-tu-rama
+
+
+
+
+
+
+
+
+
+
+
+COMANDOS PARA RESOLVER CONFLICTOS DE FUSIÓN EN GIT
+1-El comando git log –merge ayuda a producir la lista de confirmaciones que están causando el conflicto
+
+git log --merge
+
+
+2-El comando git diff ayuda a identificar las diferencias entre los repositorios o archivos de los estados
+
+git diff
+
+
+3-El comando git reset –mixed se usa para deshacer los cambios en el directorio de trabajo y el área de preparación
+
+git reset --mixed
+
+
+4-El comando git merge –abort ayuda a salir del proceso de fusión y volver al estado anterior a que comenzara la fusión
+
+git merge --abort
+
+
+5-El comando git reset se usa en el momento del conflicto de fusión para restablecer los archivos en conflicto a su estado original
+
+
+git reset
